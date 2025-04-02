@@ -2,11 +2,16 @@ package br.com.account.Models;
 
 public class User {
     private final String firstName;
-    private final String LastName;
+    private final String lastName;
+    private final Address address;
 
-    public User(String firstName, String lastName) {
+    public User(
+            String firstName,
+            String lastName,
+            Address address) {
         this.firstName = firstName;
-        this.LastName = lastName;
+        this.lastName = lastName;
+        this.address = address;
     }
 
     public String getFirstName() {
@@ -14,6 +19,15 @@ public class User {
     }
 
     public String getLastName() {
-        return this.LastName;
+        return this.lastName;
+    }
+
+    public String getAddress() {
+        return this.address.getstreet();
+    }
+
+    public void showUser() {
+        System.out.println("User: " + this.firstName + " " + this.lastName);
+        System.out.println("Address: Street" + this.address.getstreet() + " Number: " + this.address.getNumber());
     }
 }
