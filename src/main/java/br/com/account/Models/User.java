@@ -23,11 +23,11 @@ public class User {
     }
 
     public String getAddress() {
-        return this.address.getstreet();
+        return this.address.street();
     }
 
     public void showUser() {
         System.out.println("User: " + this.firstName + " " + this.lastName);
-        System.out.println("Address: Street" + this.address.getstreet() + " Number: " + this.address.getNumber());
+        System.out.println("Address: Street" + this.address.street() + " Number: " + this.address.number());
     }
 }
