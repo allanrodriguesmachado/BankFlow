@@ -5,10 +5,7 @@ public class User {
     private final String lastName;
     private final Address address;
 
-    public User(
-            String firstName,
-            String lastName,
-            Address address) {
+    public User(String firstName, String lastName, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
